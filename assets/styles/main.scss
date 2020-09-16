@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "afterglow";
+    src: url("../fonts/afterglow.woff2") format("woff2"),
+        url("../fonts/afterglow.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lora";
+    src: url("../fonts/lora.woff2") format("woff2"),
+        url("../fonts/lora.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "afterglow", serif;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+p,
+pre {
+    font-family: "lora", serif;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    text-transform: capitalize;
+    a {
+        color: #000;
+    }
+}
+
+#landing {
+    background: url(https://via.placeholder.com/1920x1080.png?text=ArtworkBackground);
+    height: 100vh;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a {
+        font-size: 35px;
+    }
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+#welcome {
+    margin-top: 20px;
+}
+
+.orbit {
+    z-index: -999;
+}
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+    border: 0;
+    img {
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 100%;
+    }
+}
+
+.poetry {
+    background: url(https://via.placeholder.com/1920x1080.png?text=ArtworkBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.illustrations {
+    img {
+        border-radius: 0%;
+    }
+}
+
+footer {
+    background: #eee;
+    width: 100%;
+}
+
+h4.widgettitle {
+    margin-top: 15px;
+}
+div#meta-3 {
+    padding-left: 15px;
+}
+.widget {
+    ul {
+        margin: 0;
+        margin-top: -15px;
+    }
+}

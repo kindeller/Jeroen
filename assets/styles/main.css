@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "afterglow";
+    src: url("../fonts/afterglow.woff2") format("woff2"),
+        url("../fonts/afterglow.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "lora";
+    src: url("../fonts/lora.woff2") format("woff2"),
+        url("../fonts/lora.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background: url(../images/background.jpg) !important; */
+    background: #b88f51 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "afterglow", serif !important;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+p,
+pre {
+    font-family: "lora", serif !important;
+}
+
+.top-bar,
+.top-bar ul {
+    /* background-color: transparent !important; */
+    background: #ece2c7 !important;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    text-transform: capitalize;
+}
+
+nav a {
+    color: #000;
+}
+
+#landing {
+    background: url(../images/background-01.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    /* background-blend-mode: soft-light; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center 0; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+#landing a {
+    font-size: 35px;
+}
+
+#landing h1 {
+    text-transform: uppercase;
+}
+
+#curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path {
+    fill: #b88f51;
+}
+
+#welcome {
+    margin-top: 20px;
+}
+
+.orbit {
+    z-index: -999;
+}
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+    border: 0px !important;
+    background-color: transparent !important;
+}
+
+.card img {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.cat-container {
+    position: relative;
+    width: 100%;
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cat-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cat-container:hover .cat-image {
+    opacity: 0.3;
+}
+
+.cat-container:hover .middle {
+    opacity: 1;
+}
+
+#film-bg {
+    background: url(https://via.placeholder.com/300.png?text=FILM);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#theatre-bg {
+    background: url(https://via.placeholder.com/300.png?text=THEATRE);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#design-bg {
+    background: url(../images/design.jpg);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#poetry-bg {
+    background: url(../images/poetry.jpg);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#illustrations-bg {
+    background: url(../images/illustrations.jpg);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lizi-bg {
+    background: url(../images/lizi.jpg);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#film-bg:hover, #theatre-bg:hover, #design-bg:hover, #poetry-bg:hover, #illustrations-bg:hover, #lizi-bg:hover {
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: soft-light;
+}
+
+.cat-text {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.poetry {
+    background: url(https://via.placeholder.com/1920x1080.png?text=ArtworkBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.illustrations img {
+    border-radius: 0%;
+}
+
+footer {
+    background: #eee;
+    width: 100%;
+}
+h4.widgettitle {
+    margin-top: 15px;
+}
+
+div#meta-3 {
+    padding-left: 15px;
+}
+
+.widget ul {
+    margin: 0;
+    margin-top: -15px;
+}
+footer {
+    background-color: transparent !important;
+}
+
+footer {
+    background-color: trans
