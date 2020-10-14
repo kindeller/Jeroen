@@ -1,22 +1,23 @@
-@font-face {
-    font-family: "afterglow";
+/*@font-face {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/*"afterglow";
     src: url("../fonts/afterglow.woff2") format("woff2"),
-        url("../fonts/afterglow.woff") format("woff");
-    font-weight: normal;
+        url("../fonts/afterglow.woff") format("woff");*/
+    /*font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "lora";
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/*"lora";
     src: url("../fonts/lora.woff2") format("woff2"),
-        url("../fonts/lora.woff") format("woff");
-    font-weight: normal;
+        url("../fonts/lora.woff") format("woff");*/
+    /*font-weight: normal;
     font-style: normal;
-}
+}*/
 
 body {
-    /* background: url(../images/background.jpg) !important; */
-    background: #b88f51 !important;
+    background: url(../images/background2.png) !important;
 }
 
 h1,
@@ -25,34 +26,45 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "afterglow", serif !important;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
     letter-spacing: 2px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
 p,
 pre {
-    font-family: "lora", serif !important;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
 }
 
 .top-bar,
 .top-bar ul {
-    /* background-color: transparent !important; */
-    background: #ece2c7 !important;
+    background-color: transparent !important;
 }
 
-nav {
+.menu a {
+	color: #000;
+}
+
+.menu a:active, .menu a:focus {
+	background-color: #fff;
+}
+
+.menu a:hover {
+	color: #000;
+	background: url(../images/underline.png) no-repeat;
+}
+
+
+/*nav {
     width: 100%;
     position: fixed;
-    text-transform: capitalize;
 }
 
-nav a {
+/*nav a {
     color: #000;
-}
+}*/
 
 #landing {
-    background: url(../images/background-01.jpg);
     height: 100vh;
     background-attachment: fixed;
     /* background-blend-mode: soft-light; */
@@ -75,153 +87,118 @@ nav a {
     position: relative;
 }
 
-#landing a {
+/*#landing a {
     font-size: 35px;
 }
 
 #landing h1 {
     text-transform: uppercase;
-}
+}*/
 
 #curve {
     position: absolute;
     bottom: 0;
     width: 100%;
+	background: url(../images/page-break.png); /*this is the background photo for the curve. Need both below and this to work */
 }
 
 #curve path {
-    fill: #b88f51;
+    /*fill: #b88f51;*/
+	fill: url(../images/page-break.png); /*this is the background photo for the curve. Need both above and this to work */
 }
 
-#welcome {
+/*#welcome {
     margin-top: 20px;
+}*/
+
+#second {
+	margin: 0;
+	background: url(../images/category-background.png);
 }
 
 .orbit {
     z-index: -999;
 }
 
+	
 .card {
-    width: 300px;
     margin: 0 auto;
     border: 0px !important;
     background-color: transparent !important;
+	width: 250px;
+	height: 250px; 
 }
 
 .card img {
-    margin: 0 auto;
-    width: 300px;
+	border-radius: 100%;
+	/*box-shadow: black 0.3em 0.3em 0.3em;*/
+	width: 70%;
+	height: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	transition: ease 1s;
 }
 
-.cat-container {
-    position: relative;
-    width: 100%;
-    height:300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card img:hover {
+	width: 80%;
+	height: 80%;
+	margin-top: 25px;
+	/*filter: opacity(60%);*/
 }
 
-.cat-image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
+
+#category {
+	position: relative;
+	background: url(../images/circle.png);
+	/*background-color: #d4aa7b !important;*/
+	border-radius: 100%;
+	width: 250px;
+	height: 250px;
 }
 
-.middle {
-    transition: 0.5s ease;
-    opacity: 0;
+#text {
+    color: #fff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	background-color: black;
+	font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 0;
+	transition: ease 2s;
 }
 
-.cat-container:hover .cat-image {
-    opacity: 0.3;
+#text h3 {
+	 font-size: 30px;
 }
 
-.cat-container:hover .middle {
+.card:hover #text {
     opacity: 1;
 }
 
-#film-bg {
-    background: url(https://via.placeholder.com/300.png?text=FILM);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#theatre-bg {
-    background: url(https://via.placeholder.com/300.png?text=THEATRE);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#design-bg {
-    background: url(../images/design.jpg);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#poetry-bg {
-    background: url(../images/poetry.jpg);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#illustrations-bg {
-    background: url(../images/illustrations.jpg);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#lizi-bg {
-    background: url(../images/lizi.jpg);
-    width: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#film-bg:hover, #theatre-bg:hover, #design-bg:hover, #poetry-bg:hover, #illustrations-bg:hover, #lizi-bg:hover {
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: soft-light;
-}
-
-.cat-text {
-    background-color: #4caf50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-}
 .poetry {
     background: url(https://via.placeholder.com/1920x1080.png?text=ArtworkBackground);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0;
 }
+
 .illustrations img {
     border-radius: 0%;
 }
 
-footer {
+/*footer {
     background: #eee;
     width: 100%;
-}
+}*/
+
 h4.widgettitle {
     margin-top: 15px;
 }
@@ -234,9 +211,12 @@ div#meta-3 {
     margin: 0;
     margin-top: -15px;
 }
-footer {
-    background-color: transparent !important;
-}
 
 footer {
-    background-color: trans
+    /*background-color: transparent !important;*/
+	background: url(../images/footer-background.png);
+	margin-top: -30px;
+	color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

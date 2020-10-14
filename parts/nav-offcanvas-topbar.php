@@ -8,16 +8,17 @@
 
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
-		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
-		</ul>
+		<!--<ul class="menu">
+			<li><a href="<?php echo home_url(); ?>"><?php// bloginfo('name'); ?></a></li>
+		</ul>-->
+		<a href="<?php echo home_url(); ?>"><img src="wp-content/themes/jeroen v 0.1.1/assets/images/logo.png" width="100" height="150"></a>
 	</div>
 	<div class="top-bar-right show-for-medium">
 		<?php joints_top_nav(); ?>	
 	</div>
 	<div class="top-bar-right float-right show-for-small-only">
 		<ul class="menu">
-			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
+			<!--<li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
 			<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>
 		</ul>
 	</div>
