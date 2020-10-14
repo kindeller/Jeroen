@@ -33,7 +33,7 @@ get_header(); ?>
             <div class="cell large-4">
              <div class="card">
                 <div id="category">
-                <img src="wp-content/themes/jeroen v 0.1.1/assets/images/film2.png">
+                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/film.png" alt="film">
 				<div id="text">
                   <h3>FILM</h3>
                 </div>
@@ -46,7 +46,7 @@ get_header(); ?>
             <div class="cell large-4">
             <div class="card">
                 <div id="category">
-                <img src="wp-content/themes/jeroen v 0.1.1/assets/images/theater2.png">
+                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/theater.png" alt="theater">
 				<div id="text">
                   <h3>THEATER</h3>
                 </div>
@@ -58,7 +58,7 @@ get_header(); ?>
             <div class="cell large-4">
             <div class="card">
                 <div id="category">
-                <img src="wp-content/themes/jeroen v 0.1.1/assets/images/design2.png">
+                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/design.png" alt="design">
 				<div id="text">
                   <h3>DESIGN</h3>
                 </div>
@@ -71,7 +71,7 @@ get_header(); ?>
             <div class="cell large-4">
             <div class="card">
                 <div id="category">
-                <img src="wp-content/themes/jeroen v 0.1.1/assets/images/poetry2.png">
+                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/poetry.png" alt="poetry">
 				<div id="text">
                   <h3>POETRY</h3>
                 </div>
@@ -82,7 +82,7 @@ get_header(); ?>
             <div class="cell large-4">
             <div class="card">
                 <div id="category">
-                <img src="wp-content/themes/jeroen v 0.1.1/assets/images/illustrations2.png">
+                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/illustrations.png" alt="illustrations">
 				<div id="text">
                   <h3>ILLUSTRATIONS</h3>
                 </div>
@@ -93,7 +93,7 @@ get_header(); ?>
             <div class="cell large-4">
             <div class="card">
                 <div id="category">
-                <img src="https://via.placeholder.com/300x300/CCCCCC/CCCCCC" />
+                <img src="https://via.placeholder.com/300x300/CCCCCC/CCCCCC" alt="LiZi">
 				<div id="text">
                   <h3>LiZi</h3>
                 </div>

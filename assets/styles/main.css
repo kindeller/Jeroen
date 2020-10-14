@@ -17,7 +17,7 @@
 }*/
 
 body {
-    background: url(../images/background2.png) !important;
+    background: url(../images/background.png) !important;
 }
 
 h1,
@@ -28,6 +28,7 @@ h5,
 h6 {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
     letter-spacing: 2px;
+	text-align: center;
     /*text-transform: capitalize;*/
 }
 
@@ -217,6 +218,12 @@ footer {
 	background: url(../images/footer-background.png);
 	margin-top: -30px;
 	color: #fff;
+}
+
+/*mobile*/
+
+.menu-icon {
+	float: right;
 }
 
 /*# sourceMappingURL=main.css.map */
