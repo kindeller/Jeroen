@@ -47,7 +47,8 @@ pre {
 }
 
 .menu a:active, .menu a:focus {
-	background-color: #fff;
+	background: url(../images/underline.png) no-repeat;
+	color: #000;
 }
 
 .menu a:hover {
@@ -224,6 +225,23 @@ footer {
 
 .menu-icon {
 	float: right;
+}
+
+#off-canvas {
+	background: url(../images/mobile-menu.png);
+	opacity: 100%;
+	box-shadow: none;
+}
+
+.mobile-menu {
+	/*Imargin-left: 10px;*/
+	float: right;
+	text-align: right;
+	font-size: 20px;
+}
+
+.close-button:active {
+	border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
