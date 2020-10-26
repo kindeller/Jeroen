@@ -18,13 +18,7 @@
 	    					</nav>
 						</div>
 						
-						<div class="small-12 medium-12 large-12 cell">
-						<?php if ( is_active_sidebar( 'sidebar2' ) ) : ?>
-
-<?php dynamic_sidebar( 'sidebar2' ); ?>
-
-<?php endif; ?>
-						</div>
+					
 						
 						<div class="small-12 medium-12 large-12 cell">
 							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>

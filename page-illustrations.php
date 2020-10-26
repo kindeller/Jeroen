@@ -8,88 +8,31 @@
  */
 
 get_header(); ?>
-<div id="container">
-<div class="grid-container">
-  <div class="illustrations">
-    <br>
-        <h2>illustrations</h2>
-        <p>All illustrations are completely hand drawn</p>
-        <div class="grid-x margin-x">
-        <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="cell large-4">
-              <div class="card">
-                <img src="https://via.placeholder.com/300x300" />
-                <div class="card-section">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Soluta, porro?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+	<div id="container">
+      
+      <div class="grid-x">
+        <div class="cell">
+          <section id="illustrations">
+          <h1 id="illustrations-title">ILLUSTRATIONS</h1>
+		  <p>all hand-drawn</p>
+          </section>
         </div>
-        </div>       
-</div> 
+      </div>
+    
+	<section id="illustrations-gallery">
+	<div id="illustrations-gallery-widget" class="sidebar small-12 medium-4 large-4 cell" role="complementary">
+
+	<?php if ( is_active_sidebar( 'illustrations' ) ) : ?>
+
+		<?php dynamic_sidebar( 'illustrations' ); ?>
+
+	<?php endif; ?>
+
 </div>
-<?php get_footer(); ?>
+	 </section>
+
+  </div>
+
+<footer>
+  <?php get_footer(); ?>
+</footer>

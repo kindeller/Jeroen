@@ -9,9 +9,19 @@
 
 get_header(); ?>
 <div id="container">
-<div class="grid-container">
-    <br>
-        <h2>about</h2>
+
+<div class="grid-x">
+        <div class="cell">
+         
+          <section id="about">
+          <h1>ABOUT</h1>
+   
+          </section>
+
+        </div>
+      </div>
+    
+	<section id="about2">
         <div class="grid-x grid-margin-x">
           <div class="cell large-6">
             <div
@@ -109,6 +119,9 @@ get_header(); ?>
             </p>
           </div>
         </div>
+		</section>
       </div>
-</div>
-<?php get_footer(); ?>
+
+<footer>
+  <?php get_footer(); ?>
+</footer>

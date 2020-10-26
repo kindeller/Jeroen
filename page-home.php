@@ -32,72 +32,68 @@ get_header(); ?>
           <div class="grid-x grid-margin-x">
             <div class="cell large-4">
              <div class="card">
-                <div id="category">
-                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/film.png" alt="film">
+                <a href="film"><div id="category1">
 				<div id="text">
                   <h3>FILM</h3>
                 </div>
 				
-              </div>
+              </div></a>
                 
             </div>
             </div>
 			
             <div class="cell large-4">
             <div class="card">
-                <div id="category">
-                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/theater.png" alt="theater">
+                <a href="theater"><div id="category2">
 				<div id="text">
                   <h3>THEATER</h3>
                 </div>
-              </div>
+              </div></a>
                 
               </div>
             </div>
 			
             <div class="cell large-4">
             <div class="card">
-                <div id="category">
-                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/design.png" alt="design">
+                <a href="design"><div id="category3">
 				<div id="text">
                   <h3>DESIGN</h3>
                 </div>
-              </div>
+              </div></a>
               </div>
             </div>
           </div>
 		  
+		  <p id="line">From the coffee stain of dreams the inspiration flows into passion, reality, and fantasy</p>
+		  
           <div class="grid-x grid-margin-x">
             <div class="cell large-4">
             <div class="card">
-                <div id="category">
-                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/poetry.png" alt="poetry">
+                <a href="poetry"><div id="category4">
 				<div id="text">
                   <h3>POETRY</h3>
                 </div>
-              </div>
+              </div></a>
                 
               </div>
             </div>
             <div class="cell large-4">
             <div class="card">
-                <div id="category">
-                <img src="wp-content/themes/verschoor-vision-imagination/assets/images/illustrations.png" alt="illustrations">
+                <a href="illustrations"><div id="category5">
 				<div id="text">
                   <h3>ILLUSTRATIONS</h3>
                 </div>
-              </div>
+              </div></a>
                 
               </div>
             </div>
             <div class="cell large-4">
             <div class="card">
-                <div id="category">
-                <img src="https://via.placeholder.com/300x300/CCCCCC/CCCCCC" alt="LiZi">
+                <a href="lizi"><div id="category6">
 				<div id="text">
                   <h3>LiZi</h3>
                 </div>
-              </div>
+              </div></a>
                 
               </div>
             </div>
