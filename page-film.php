@@ -7,13 +7,15 @@
  * It is used to display a page when nothing more specific matches a query.
  */
 
+global $HeadType;
+$HeadType = "Film";
 get_header(); ?>
 	<div id="container">
       
       <div class="grid-x">
         <div class="cell">
           <section id="film">
-          <h1 id="film-title">FILMS</h1>
+          <h1 id="film-title"><?php the_title(); ?></h1>
           </section>
         </div>
       </div>

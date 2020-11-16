@@ -4,14 +4,15 @@
  *
  * For more info: https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  */
- 	
+ global $HeadType;
+$HeadType = "Page";	
 get_header(); ?>
 			
 	<div class="content">
 
 		<div class="inner-content grid-x grid-margin-x grid-padding-x">
 	
-			<main class="main small-12 medium-8 large-8 cell" role="main">
+			<main class="main small-12 medium-12 large-12 cell" role="main">
 				<header>
 					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
 				</header>
@@ -33,10 +34,13 @@ get_header(); ?>
 	
 		    </main> <!-- end #main -->
 		
-		    <?php get_sidebar(); ?>
+		    <?php //get_sidebar(); ?>
 		
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
+<br class="clearfloat">
+<footer id="search-footer">
+  <?php get_footer(); ?>
+</footer>
 
-<?php get_footer(); ?>

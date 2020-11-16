@@ -52,6 +52,16 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 	
+		register_sidebar(array(
+		'id' => 'poetry',
+		'name' => __('Poetry', 'jointswp'),
+		'description' => __('Poetry gallery.', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+	
 	register_sidebar(array(
 		'id' => 'lizi',
 		'name' => __('LiZi', 'jointswp'),
@@ -61,7 +71,6 @@ function joints_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-	
 	
 
 	/*

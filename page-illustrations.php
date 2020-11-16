@@ -6,14 +6,15 @@
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  */
-
+global $HeadType;
+$HeadType = "Illustrations";
 get_header(); ?>
 	<div id="container">
       
       <div class="grid-x">
         <div class="cell">
           <section id="illustrations">
-          <h1 id="illustrations-title">ILLUSTRATIONS</h1>
+          <h1 id="illustrations-title"><?php the_title(); ?></h1>
 		  <p>all hand-drawn</p>
           </section>
         </div>

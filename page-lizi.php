@@ -6,15 +6,16 @@
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  */
-
+global $HeadType;
+$HeadType = "Lizi";
 get_header(); ?>
 	<div id="container">
       
       <div class="grid-x">
         <div class="cell">
           <section id="lizi">
-          <h1 id="lizi-title">THE ART OF LiZi</h1>
-		  <p>performance fine artist</p>
+         <!-- <h1 id="lizi-title">THE ART OF LiZi</h1>
+		  <p>performance fine artist</p>-->
           </section>
         </div>
       </div>
